@@ -5,6 +5,7 @@
  */
 package com.demo.app.demo;
 
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -22,6 +23,10 @@ public class PersonServiceImpl implements PersonService{
     public Person getPersonByName(String name) {
         return personRepository.findByName(name);        
     }  
+
+    public List<Person> getAllPersons() {
+        return personRepository.findAll();
+    }
     
     
 }

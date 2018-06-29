@@ -29,7 +29,7 @@ public class ServiceTest {
     }        
 
     @Before
-    public void setUp() {
+    public void init() {
         Person person = new Person();
         person.setName("Bob");
 

@@ -5,10 +5,13 @@
  */
 package com.demo.app.demo;
 
+import java.util.List;
+
 /**
  *
  * @author nosov
  */
 public interface PersonService {
     Person getPersonByName(String name);
+    List<Person> getAllPersons();
 }

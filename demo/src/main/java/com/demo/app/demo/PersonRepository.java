@@ -5,6 +5,7 @@
  */
 package com.demo.app.demo;
 
+import java.util.List;
 import org.springframework.data.repository.CrudRepository;
 
 /**
@@ -13,4 +14,5 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface PersonRepository extends CrudRepository<Person, Long> {
     public Person findByName(String name);
+    public List<Person> findAll();
 }
